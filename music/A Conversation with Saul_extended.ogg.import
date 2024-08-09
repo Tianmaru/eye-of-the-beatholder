@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/A Conversation with Saul_extended.ogg-07ccada366f5176bc740ba0566caac68.oggstr"
+
+[deps]
+
+source_file="res://music/A Conversation with Saul_extended.ogg"
+dest_files=[ "res://.import/A Conversation with Saul_extended.ogg-07ccada366f5176bc740ba0566caac68.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

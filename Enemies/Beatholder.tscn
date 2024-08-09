@@ -1,0 +1,35 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Beatle.gd" type="Script" id=1]
+[ext_resource path="res://BeatActions/ShootBeatAction.gd" type="Script" id=2]
+[ext_resource path="res://colored_tilemap_packed.png" type="Texture" id=3]
+[ext_resource path="res://BeatActions/TurnBeatAction.gd" type="Script" id=4]
+[ext_resource path="res://BeatActions/AlignBeatAction.gd" type="Script" id=5]
+[ext_resource path="res://BeatActions/PassBeatAction.gd" type="Script" id=6]
+[ext_resource path="res://BeatActions/TurnToPlayerBeatAction.gd" type="Script" id=7]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 1, 1 )
+
+[node name="Beatholder" type="Area2D" groups=["npc"]]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource( 1 )
+MAX_HP = 8
+_beat_actions = [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 4, 4 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 104, 0, 8, 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 4, 4 )
+shape = SubResource( 5 )
+
+[node name="HpBar" type="ColorRect" parent="."]
+margin_top = -2.0
+margin_right = 8.0
+margin_bottom = -1.0
+color = Color( 1, 0, 0, 1 )

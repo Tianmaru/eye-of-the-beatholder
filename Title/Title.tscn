@@ -1,0 +1,139 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://fonts/PrStart.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://beatholder.png" type="Texture" id=2]
+[ext_resource path="res://Title/Title.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("VBoxContainer2/Label5:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "start"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("VBoxContainer2/Label5:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="Title" type="Node"]
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 4
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( 128, 224 )
+amount = 16
+lifetime = 3.0
+emission_shape = 2
+emission_rect_extents = Vector2( 128, 1 )
+gravity = Vector2( 0, -98 )
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+radial_accel = 10.0
+radial_accel_random = 0.5
+scale_amount = 4.0
+color = Color( 1, 0, 0, 1 )
+hue_variation = 0.15
+hue_variation_random = 0.5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 8.0
+margin_bottom = -8.0
+custom_constants/separation = 8
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 256.0
+margin_bottom = 35.0
+custom_fonts/font = SubResource( 1 )
+text = "Eye of the Beatholder"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+margin_top = 43.0
+margin_right = 256.0
+margin_bottom = 60.0
+text = "Made by Tianmaru
+for 1-Button jam 2022"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 8.0
+margin_bottom = -8.0
+custom_constants/separation = 8
+alignment = 2
+
+[node name="Label3" type="Label" parent="VBoxContainer2"]
+margin_top = 126.0
+margin_right = 256.0
+margin_bottom = 193.0
+text = "Kenney: Micro Roguelike
+Pro Sensory: Adventure time revisid
+Matthew Pablo: A Conversation with Saul
+Matthew Pablo: Orbital Colossus
+Zander Noriega: Dragged to hell
+CleytonKauffman: Game Over Sounds
+Title Art by Midjourney AI"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="Label5" type="Label" parent="VBoxContainer2"]
+margin_top = 201.0
+margin_right = 256.0
+margin_bottom = 208.0
+text = "- Press space to start -"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "start"
+anims/RESET = SubResource( 2 )
+anims/start = SubResource( 3 )

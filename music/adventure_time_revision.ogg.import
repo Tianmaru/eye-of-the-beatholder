@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/adventure_time_revision.ogg-07e724872d6f68ba67cc9d95bb854f31.oggstr"
+
+[deps]
+
+source_file="res://music/adventure_time_revision.ogg"
+dest_files=[ "res://.import/adventure_time_revision.ogg-07e724872d6f68ba67cc9d95bb854f31.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
