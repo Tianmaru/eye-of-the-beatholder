@@ -1,6 +1,6 @@
-[<img src=https://static.itch.io/images/badge-color.svg width=64>](https://tianmaru.itch.io/eye-of-the-beatholder)
-
 # Eye of the Beatholder
+
+[<img src=https://static.itch.io/images/badge-color.svg height=64>](https://tianmaru.itch.io/eye-of-the-beatholder)
 
 > A One-Button Rythm Roguelike
 
