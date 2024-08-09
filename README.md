@@ -1,4 +1,4 @@
-[![itch.io](https://static.itch.io/images/badge-color.svg)](https://tianmaru.itch.io/eye-of-the-beatholder)
+[<img src=https://static.itch.io/images/badge-color.svg width=64>](https://tianmaru.itch.io/eye-of-the-beatholder)
 
 # Eye of the Beatholder
 
@@ -6,7 +6,7 @@
 
 Made with Godot 3 for the [1-Button Jam 2022](https://itch.io/jam/1-button-jam-2022)
 
-![screenshots/screenshot_02.png]
+![screenshot](screenshots/screenshot_02.png)
 
 # About
 
