@@ -1,16 +1,14 @@
 # Eye of the Beatholder
 
-[<img src=https://static.itch.io/images/badge-color.svg height=64>](https://tianmaru.itch.io/eye-of-the-beatholder)
+> A One-Button Rythm Roguelike made with Godot 3 for the [1-Button Jam 2022](https://itch.io/jam/1-button-jam-2022)
 
-> A One-Button Rythm Roguelike
-
-Made with Godot 3 for the [1-Button Jam 2022](https://itch.io/jam/1-button-jam-2022)
-
-![screenshot](screenshots/screenshot_02.png)
+[<img src=https://static.itch.io/images/badge-color.svg height=32>](https://tianmaru.itch.io/eye-of-the-beatholder)
 
 # About
 
 > Under the gaze of the Beatholder, every soul is bound to its heart beat. Can you make it to its lair and end its reign?
+
+![screenshot](screenshots/screenshot_02.png)
 
 Eye of the Beatholder is a *One Button Rythm Roguelite*, heavily inspired by *Crypt of the Necrodancer*. Press the Spacebar on odd beats to move forward or attack enemies in front of you. Press the Spacebar on even beats to rotate your character to the right. The final boss is actually pretty tough, so make sure to collect some damage upgrades before fighting him.
 
